@@ -13,6 +13,7 @@ import { RoutingModule } from './routing.module';
 import { WidgetDetailsComponent } from './widgets/widget-details/widget-details.component';
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
 import { WidgetsComponent } from './widgets/widgets.component';
+import { DatatableComponent } from './datatable/datatable.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
     WidgetDetailsComponent,
     WidgetsComponent,
     WidgetsListComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserAnimationsModule,
