@@ -10,6 +10,7 @@ export class AppComponent {
     { path: '/', icon: 'home', title: 'home' },
     { path: '/widgets', icon: 'view_list', title: 'widgets' },
     { path: '/datatable', icon: 'view_list', title: 'Datatable' },
+    { path: '/todolist', icon: 'view_list', title: 'Datatable' },
   ];
 
   logout() {  }

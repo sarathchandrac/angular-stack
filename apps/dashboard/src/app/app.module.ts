@@ -14,6 +14,8 @@ import { WidgetDetailsComponent } from './widgets/widget-details/widget-details.
 import { WidgetsListComponent } from './widgets/widgets-list/widgets-list.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { DatatableComponent } from './datatable/datatable.component';
+import { TodolistComponent } from './todolist/todolist.component';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { DatatableComponent } from './datatable/datatable.component';
     WidgetDetailsComponent,
     WidgetsComponent,
     WidgetsListComponent,
-    DatatableComponent
+    DatatableComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -34,6 +37,7 @@ import { DatatableComponent } from './datatable/datatable.component';
     MaterialModule,
     RoutingModule,
     UiToolbarModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

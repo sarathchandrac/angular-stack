@@ -1,0 +1,16 @@
+<div class="todolist">
+    <ul>
+        <li *ngFor="let todo of todolist; let i =index">{{todo.todotitle}}</li>
+    </ul>
+    <div class="">
+        <input
+          matInput
+          placeholder="New Todo"
+          [(ngModel)]="todotitle"
+          type="text"
+          name="description"
+          required />
+          <button mat-button color="primary" class="btn btn-primary" (click)="addnewtodolist(todotitle)">Todo</button>
+    </div>
+</div>
+
