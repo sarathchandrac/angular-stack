@@ -1,6 +1,10 @@
 <div class="todolist">
     <ul>
-        <li *ngFor="let todo of todolist; let i =index">{{todo.todotitle}}</li>
+        <li *ngFor="let todo of todolist; let i =index">
+            <div  (click)="changestatus(i)">{{todo.todotitle}}</div> 
+            <div [class.displaynone]="!todo.showdesc"><input placeholder="Desc" [(ngModel)]="todo.desc" type="text" /><span  (click)="adddescriptionstodo(i)">Add</span></div>
+        </li>
+        
     </ul>
     <div class="">
         <input
